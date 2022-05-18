@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+  <div class="text-center mt-5">
+    <h1 style="color: green;">PASSWORD MANAGEMENT SYSTEM</h1>
+    <h3 style="color: red;">In this app, user can generate new password.</h3>
+    <h4 style="color: purple;">Just Enter the website name and your username for the website and the password will be generated for you.</h4>
+  
+
+  {% if request.user.is_authenticated %}
+    <a href="{% url 'password' %}" class="btn btn-outline-success mt-3 w-50 btn-lg">View Saved Passwords</a>
+  {% else %}
+  <div class="d-flex gap-4">
+    <a class="btn btn-outline-success mt-3 w-50 btn-lg" href="{% url 'account_login' %}">Login</a>
+    <a class="btn btn-outline-success mt-3 w-50 btn-lg" href="{% url 'account_signup' %}">Register</a>
+  </div>
+  {% endif %}
+
+  </div>
+
+{% endblock %}
