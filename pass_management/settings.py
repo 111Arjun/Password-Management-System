@@ -20,7 +20,6 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'password-msnn.onrender.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'jet.dashboard',
     'jet',
     'django.contrib.admin',
     'django.contrib.auth',
