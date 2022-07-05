@@ -36,7 +36,6 @@ INSTALLED_APPS = [
 
     'pms.apps.PmsConfig',
     'crispy_forms',
-
 ]
 
 MIDDLEWARE = [

@@ -13,6 +13,4 @@ class SaveData(models.Model):
         self.password = get_random_string(length=16, allowed_chars=chars)
         super(SaveData, self).save(*args, **kwargs)
 
-    def  __str__(self):
-        return f'{self.website} - {self.username}'
-
+        

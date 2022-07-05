@@ -24,7 +24,7 @@ def passwordform(request):
             new_pass.user = request.user
             new_pass.save()
 
-            messages.success(request, 'Password was generated successfully')
+            messages.info(request, 'Password was generated successfully')
             return redirect('password')
 
     context = {'form': form}
@@ -50,5 +50,5 @@ def password_update(request, id):
 def password_delete(request, id):
     data_obj = SaveData.objects.get(id=id)
     data_obj.delete()
-    messages.info(request, 'Password was deleted successfully')
+    messages.error(request, 'Password was deleted successfully')
     return redirect('password')
