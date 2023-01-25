@@ -1,7 +1,7 @@
 
 # PASSWORD MANAGEMENT SYSTEM IN DJANGO 
 
-# Project Live @https://password-msnn.onrender.com/
+# Project Live @https://password-2eyt.onrender.com
 ### Note: The live site is hosted on free tier @render.com, so it may take some time to load the data.
 
 
